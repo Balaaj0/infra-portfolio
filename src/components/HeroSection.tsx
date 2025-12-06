@@ -1,4 +1,4 @@
-import { ArrowDown, Download, Terminal } from "lucide-react";
+import { ArrowRight, Download, Terminal } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const techTags = [
@@ -71,7 +71,7 @@ export function HeroSection() {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/20"
             >
               View Projects
-              <ArrowDown size={18} />
+              <ArrowRight size={18} />
             </Link>
             <a
               href="#"
@@ -81,11 +81,6 @@ export function HeroSection() {
               Download CV
             </a>
           </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ArrowDown size={20} className="text-muted-foreground" />
         </div>
       </div>
     </section>
