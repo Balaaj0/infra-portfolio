@@ -1,5 +1,6 @@
 import { ArrowRight, Download, Terminal } from "lucide-react";
 import { Link } from "react-router-dom";
+import portrait from "@/assets/portrait.jpg";
 
 const techTags = [
   "Azure",
@@ -27,6 +28,17 @@ export function HeroSection() {
 
       <div className="section-container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
+          {/* Portrait */}
+          <div className="mb-8 animate-fade-in">
+            <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full overflow-hidden border-2 border-primary/20 shadow-lg shadow-primary/10">
+              <img 
+                src={portrait} 
+                alt="Balaaj Khan" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
           {/* Terminal Prompt */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/50 border border-border mb-8 animate-fade-in">
             <Terminal size={16} className="text-primary" />
